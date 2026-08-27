@@ -1,0 +1,30 @@
+.content{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+
+.left{
+    background-color: green;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    width: 400px;
+    height: 936px;
+}
+
+.right{
+    background-color: red;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: auto;
+    width: 800px;
+    height: 936px;
+}
+
+.topright{
+    background-color: yellow;
+    display: flex;
+    height: 33%;
+    width: 100rem;
+}
