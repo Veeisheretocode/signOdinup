@@ -3,38 +3,39 @@
   src: url(../fonts/the-font-file.woff);
 } */
 
-body{
+body {
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.content{
+.content {
     display: flex;
-    background-color: aqua;
+    flex-direction: row;
+    width: 100%;
 }
 
 .left{
-    z-index: 1;
-    background-color: green;
     box-sizing: border-box;
     display: flex;
     width: 30%;
     height: 100vh; 
     position: relative;
-    /*min-width, overflow-x:auto;*/
-}
+} 
 .logo{
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
+    justify-content: center;
     box-sizing: border-box;
     position: absolute;
     top: 96px;
     height: 128px;
     width: 100%;
-}
+} 
 
-.right{
-    z-index: 2;
-    background-color: red;
+.right {
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -42,21 +43,23 @@ body{
     height: 100vh;
 }
 
-.topright{
+.topright {
     display: flex;
     background-color: yellow;
     width: 100%;
     height: 33%;
-}
-
-.topright>p{
-    display: flex;
-    font-size: 24px;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-end;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.form{
+.form {
     display: flex;
-    justify-content:center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
 }
