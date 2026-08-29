@@ -1,30 +1,62 @@
+/* @font-face {
+  font-family: my-cool-font;
+  src: url(../fonts/the-font-file.woff);
+} */
+
+body{
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 .content{
     display: flex;
-    flex-direction: row;
     background-color: aqua;
 }
 
 .left{
+    z-index: 1;
     background-color: green;
+    box-sizing: border-box;
     display: flex;
-    justify-content: flex-start;
-    margin-left: auto;
-    width: 400px;
-    height: 936px;
+    width: 30%;
+    height: 100vh; 
+    position: relative;
+    /*min-width, overflow-x:auto;*/
+}
+.logo{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    box-sizing: border-box;
+    position: absolute;
+    top: 96px;
+    height: 128px;
+    width: 100%;
 }
 
 .right{
+    z-index: 2;
     background-color: red;
     display: flex;
-    justify-content: flex-end;
-    margin-right: auto;
-    width: 800px;
-    height: 936px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 70%;
+    height: 100vh;
 }
 
 .topright{
-    background-color: yellow;
     display: flex;
+    background-color: yellow;
+    width: 100%;
     height: 33%;
-    width: 100rem;
+}
+
+.topright>p{
+    display: flex;
+    font-size: 24px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.form{
+    display: flex;
+    justify-content:center;
 }
